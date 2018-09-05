@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12120" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="220" id="KGk-i7-Jjw" customClass="RoleActionCell" customModule="Producer" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="342" height="220"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="342" height="219.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="r3f-xI-iOS">
+                        <rect key="frame" x="12" y="10" width="318" height="120"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <color key="textColor" red="0.40000000600000002" green="0.40000000600000002" blue="0.40000000600000002" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0dm-RC-WF7">
+                        <rect key="frame" x="114" y="154.5" width="114" height="40"/>
+                        <color key="backgroundColor" red="0.80120879411697388" green="0.094596110284328461" blue="0.095572464168071747" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="40" id="Lp5-UQ-bl6"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <state key="normal" title="报名"/>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                <integer key="value" value="5"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                        <connections>
+                            <action selector="btnClick:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="2Jr-Sb-Grf"/>
+                        </connections>
+                    </button>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="0dm-RC-WF7" firstAttribute="centerX" secondItem="H2p-sc-9uM" secondAttribute="centerX" id="4AG-eC-A1l"/>
+                    <constraint firstItem="0dm-RC-WF7" firstAttribute="top" secondItem="r3f-xI-iOS" secondAttribute="bottom" constant="25" id="8Zj-zE-hFh"/>
+                    <constraint firstItem="r3f-xI-iOS" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="12" id="HNn-BX-Bef"/>
+                    <constraint firstAttribute="bottom" secondItem="0dm-RC-WF7" secondAttribute="bottom" constant="25" id="Hql-0i-cMT"/>
+                    <constraint firstAttribute="trailing" secondItem="r3f-xI-iOS" secondAttribute="trailing" constant="12" id="I1L-UO-PZh"/>
+                    <constraint firstItem="r3f-xI-iOS" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="NSP-Vs-WIj"/>
+                    <constraint firstItem="0dm-RC-WF7" firstAttribute="width" secondItem="H2p-sc-9uM" secondAttribute="width" multiplier="1:3" id="kcN-wN-N3u"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="submitBtn" destination="0dm-RC-WF7" id="LuE-I7-73Q"/>
+                <outlet property="tentLabel" destination="r3f-xI-iOS" id="f8r-JP-Uko"/>
+            </connections>
+            <point key="canvasLocation" x="-271" y="160"/>
+        </tableViewCell>
+    </objects>
+</document>

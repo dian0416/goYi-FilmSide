@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12120" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="InputView" customModule="Producer" customModuleProvider="target">
+            <connections>
+                <outlet property="pushBtn" destination="z0N-by-phD" id="Wuc-VS-08G"/>
+                <outlet property="sendBtn" destination="Nlv-rd-fJF" id="TND-ff-j1g"/>
+                <outlet property="textFiled" destination="o8V-op-yBz" id="d1M-SK-0sQ"/>
+                <outlet property="view" destination="iN0-l3-epB" id="xiU-6K-EJS"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="397" height="79"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="我也要说一句" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="o8V-op-yBz">
+                    <rect key="frame" x="60" y="10" width="287" height="59"/>
+                    <nil key="textColor"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <textInputTraits key="textInputTraits"/>
+                </textField>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="z0N-by-phD">
+                    <rect key="frame" x="357" y="0.0" width="40" height="79"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="40" id="6o4-bU-uGL"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <state key="normal" title="发送">
+                        <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </state>
+                    <connections>
+                        <action selector="sendClick:" destination="-1" eventType="touchUpInside" id="mU4-Ro-lFr"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Nlv-rd-fJF">
+                    <rect key="frame" x="5" y="0.0" width="50" height="79"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="50" id="1cO-R4-YhA"/>
+                    </constraints>
+                    <state key="normal" image="demo"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                            <integer key="value" value="5"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                    <connections>
+                        <action selector="btnClick:" destination="-1" eventType="touchUpInside" id="wbu-Z4-THT"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="Nlv-rd-fJF" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="32g-BC-98W"/>
+                <constraint firstAttribute="bottom" secondItem="z0N-by-phD" secondAttribute="bottom" id="Cnb-i5-Mqz"/>
+                <constraint firstItem="z0N-by-phD" firstAttribute="leading" secondItem="o8V-op-yBz" secondAttribute="trailing" constant="10" id="FLh-WO-3FE"/>
+                <constraint firstAttribute="trailing" secondItem="z0N-by-phD" secondAttribute="trailing" id="JIc-A3-MR0"/>
+                <constraint firstItem="z0N-by-phD" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="aA1-q2-UCb"/>
+                <constraint firstAttribute="bottom" secondItem="Nlv-rd-fJF" secondAttribute="bottom" id="dBv-yT-1PG"/>
+                <constraint firstItem="o8V-op-yBz" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="10" id="eWb-aU-Zch"/>
+                <constraint firstItem="o8V-op-yBz" firstAttribute="leading" secondItem="Nlv-rd-fJF" secondAttribute="trailing" constant="5" id="qrX-Hu-zkK"/>
+                <constraint firstAttribute="bottom" secondItem="o8V-op-yBz" secondAttribute="bottom" constant="10" id="tLg-Nm-BAH"/>
+                <constraint firstItem="Nlv-rd-fJF" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="5" id="u8Y-ls-hiS"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="-247" y="37"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="demo" width="240" height="135"/>
+    </resources>
+</document>

@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12120" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="225" id="KGk-i7-Jjw" customClass="SwarmCell" customModule="FilmSide" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="368" height="225"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="368" height="224.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <button opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ydo-BW-xtL">
+                        <rect key="frame" x="10" y="10" width="348" height="20"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <inset key="titleEdgeInsets" minX="5" minY="0.0" maxX="0.0" maxY="0.0"/>
+                        <state key="normal" title="2017-02-10" image="time">
+                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </state>
+                    </button>
+                    <button opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Etz-My-1OU">
+                        <rect key="frame" x="10" y="90" width="348" height="19"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <inset key="titleEdgeInsets" minX="5" minY="0.0" maxX="0.0" maxY="0.0"/>
+                        <state key="normal" title="20人" image="person">
+                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </state>
+                    </button>
+                    <button opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FwQ-FM-ksY">
+                        <rect key="frame" x="10" y="40" width="348" height="40"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="40" id="zez-CO-App"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <inset key="titleEdgeInsets" minX="5" minY="0.0" maxX="0.0" maxY="0.0"/>
+                        <state key="normal" title="浙江省杭州市横店镇花魁路1182号夕颜大厦18幢一单元2304室演绎工作室" image="location">
+                            <color key="titleColor" red="0.80120879411697388" green="0.094596110284328461" blue="0.095572464168071747" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </state>
+                    </button>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="Etz-My-1OU" secondAttribute="bottom" constant="5" id="BAL-Lp-7Js"/>
+                    <constraint firstItem="FwQ-FM-ksY" firstAttribute="top" secondItem="ydo-BW-xtL" secondAttribute="bottom" constant="10" id="QST-gL-34I"/>
+                    <constraint firstItem="FwQ-FM-ksY" firstAttribute="width" secondItem="ydo-BW-xtL" secondAttribute="width" id="Wap-hH-7ER"/>
+                    <constraint firstItem="FwQ-FM-ksY" firstAttribute="leading" secondItem="ydo-BW-xtL" secondAttribute="leading" id="ain-RC-Rsl"/>
+                    <constraint firstAttribute="trailing" secondItem="ydo-BW-xtL" secondAttribute="trailing" constant="10" id="d33-J6-pff"/>
+                    <constraint firstItem="Etz-My-1OU" firstAttribute="top" secondItem="FwQ-FM-ksY" secondAttribute="bottom" constant="10" id="hR4-82-yPN"/>
+                    <constraint firstItem="Etz-My-1OU" firstAttribute="width" secondItem="FwQ-FM-ksY" secondAttribute="width" id="pdL-Me-yU3"/>
+                    <constraint firstItem="Etz-My-1OU" firstAttribute="leading" secondItem="FwQ-FM-ksY" secondAttribute="leading" id="sCR-tB-g0E"/>
+                    <constraint firstItem="ydo-BW-xtL" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="yb4-59-OO6"/>
+                    <constraint firstItem="ydo-BW-xtL" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="zs5-EW-f5P"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="addrBtn" destination="FwQ-FM-ksY" id="UUJ-kt-8iY"/>
+                <outlet property="countBtn" destination="Etz-My-1OU" id="m0V-UN-O0d"/>
+                <outlet property="timeBtn" destination="ydo-BW-xtL" id="uGc-bJ-khQ"/>
+            </connections>
+            <point key="canvasLocation" x="-55" y="171.5"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="location" width="19" height="19"/>
+        <image name="person" width="19" height="19"/>
+        <image name="time" width="20" height="20"/>
+    </resources>
+</document>

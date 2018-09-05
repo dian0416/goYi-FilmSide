@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12120" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="189" id="KGk-i7-Jjw" customClass="InfoWorksCell" customModule="Producer" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="352" height="189"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="352" height="188.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="【怪物无语】饰演素素" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="a8n-LF-EYT">
+                        <rect key="frame" x="10" y="10" width="163.5" height="20"/>
+                        <constraints>
+                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="20" id="A2W-bS-nBG"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="合作导演和艺人：张天格，大粽子，水心围，痴梦魍魉" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dZQ-gt-0eF">
+                        <rect key="frame" x="10" y="40" width="332" height="36"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <color key="textColor" red="0.40000000600000002" green="0.40000000600000002" blue="0.40000000600000002" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="right" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Htq-db-3fa">
+                        <rect key="frame" x="302" y="0.0" width="40" height="40"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="40" id="YZf-SO-RGd"/>
+                            <constraint firstAttribute="width" constant="40" id="kcx-J7-UPy"/>
+                        </constraints>
+                        <state key="normal" image="edit"/>
+                        <connections>
+                            <action selector="editClick:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="gkK-mh-oAK"/>
+                        </connections>
+                    </button>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="a8n-LF-EYT" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="9Rl-LN-B22"/>
+                    <constraint firstItem="dZQ-gt-0eF" firstAttribute="leading" secondItem="a8n-LF-EYT" secondAttribute="leading" id="AkO-Iq-vSI"/>
+                    <constraint firstItem="Htq-db-3fa" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="a8n-LF-EYT" secondAttribute="trailing" constant="10" id="EKs-cE-RDh"/>
+                    <constraint firstItem="a8n-LF-EYT" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="IWa-cN-okP"/>
+                    <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="dZQ-gt-0eF" secondAttribute="bottom" constant="10" id="UET-dt-WvJ"/>
+                    <constraint firstItem="Htq-db-3fa" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="YtX-FV-un6"/>
+                    <constraint firstAttribute="trailing" secondItem="Htq-db-3fa" secondAttribute="trailing" constant="10" id="deA-WI-M0m"/>
+                    <constraint firstItem="dZQ-gt-0eF" firstAttribute="top" secondItem="a8n-LF-EYT" secondAttribute="bottom" constant="10" id="eVK-6c-0wb"/>
+                    <constraint firstAttribute="trailing" secondItem="dZQ-gt-0eF" secondAttribute="trailing" constant="10" id="z1b-Na-wUs"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="editBtn" destination="Htq-db-3fa" id="0PT-66-K6f"/>
+                <outlet property="nameLabel" destination="a8n-LF-EYT" id="jvG-FD-sdT"/>
+                <outlet property="personLabel" destination="dZQ-gt-0eF" id="lhu-4V-i5V"/>
+            </connections>
+            <point key="canvasLocation" x="-78" y="114"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="edit" width="14" height="14"/>
+    </resources>
+</document>

@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12120" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="77" id="KGk-i7-Jjw" customClass="UserHeadCell" customModule="FilmSide" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="383" height="77"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="383" height="76.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DQg-2E-n8X">
+                        <rect key="frame" x="66" y="10" width="45.5" height="46.5"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <state key="normal" image="default">
+                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </state>
+                        <connections>
+                            <action selector="userClick:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="agx-PV-dln"/>
+                        </connections>
+                    </button>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4sg-qw-Ncg">
+                        <rect key="frame" x="121.5" y="10" width="46" height="46.5"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <state key="normal" image="default">
+                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </state>
+                        <connections>
+                            <action selector="userClick:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="8Iz-mi-5Uc"/>
+                        </connections>
+                    </button>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oqj-xr-f9T">
+                        <rect key="frame" x="177.5" y="10" width="45.5" height="46.5"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <state key="normal" image="default">
+                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </state>
+                        <connections>
+                            <action selector="userClick:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="gam-hP-DEQ"/>
+                        </connections>
+                    </button>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fcc-Wi-mfH">
+                        <rect key="frame" x="10" y="10" width="46" height="46.5"/>
+                        <constraints>
+                            <constraint firstAttribute="width" secondItem="fcc-Wi-mfH" secondAttribute="height" multiplier="1:1" id="lWS-p9-3m1"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <state key="normal" image="default">
+                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </state>
+                        <connections>
+                            <action selector="userClick:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="VnR-dd-KaM"/>
+                        </connections>
+                    </button>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="已有16人报名" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mes-q5-AE6">
+                        <rect key="frame" x="233" y="29" width="140" height="18"/>
+                        <constraints>
+                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="140" id="NQO-Kd-Gmx"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <color key="textColor" red="0.20000000300000001" green="0.20000000300000001" blue="0.20000000300000001" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="4sg-qw-Ncg" firstAttribute="leading" secondItem="DQg-2E-n8X" secondAttribute="trailing" constant="10" id="1Pf-0W-OnP"/>
+                    <constraint firstItem="oqj-xr-f9T" firstAttribute="height" secondItem="fcc-Wi-mfH" secondAttribute="height" id="1f3-0L-wmg"/>
+                    <constraint firstAttribute="trailing" secondItem="mes-q5-AE6" secondAttribute="trailing" constant="10" id="5yZ-AN-XBt"/>
+                    <constraint firstItem="DQg-2E-n8X" firstAttribute="top" secondItem="fcc-Wi-mfH" secondAttribute="top" id="FCN-WT-vbc"/>
+                    <constraint firstItem="fcc-Wi-mfH" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="ICH-qN-wGQ"/>
+                    <constraint firstItem="4sg-qw-Ncg" firstAttribute="height" secondItem="fcc-Wi-mfH" secondAttribute="height" id="Ke9-m9-VtR"/>
+                    <constraint firstItem="DQg-2E-n8X" firstAttribute="width" secondItem="fcc-Wi-mfH" secondAttribute="width" id="Nvg-zD-Rzk"/>
+                    <constraint firstItem="oqj-xr-f9T" firstAttribute="top" secondItem="4sg-qw-Ncg" secondAttribute="top" id="WIx-Kj-RUY"/>
+                    <constraint firstItem="oqj-xr-f9T" firstAttribute="width" secondItem="fcc-Wi-mfH" secondAttribute="width" id="dbV-ff-LbR"/>
+                    <constraint firstItem="4sg-qw-Ncg" firstAttribute="width" secondItem="fcc-Wi-mfH" secondAttribute="width" id="eBq-XD-dYm"/>
+                    <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="fcc-Wi-mfH" secondAttribute="bottom" constant="10" id="eaz-Na-MQS"/>
+                    <constraint firstItem="fcc-Wi-mfH" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="qWM-uX-SUt"/>
+                    <constraint firstItem="mes-q5-AE6" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="smY-Zg-C93"/>
+                    <constraint firstItem="oqj-xr-f9T" firstAttribute="leading" secondItem="4sg-qw-Ncg" secondAttribute="trailing" constant="10" id="utd-x7-GX4"/>
+                    <constraint firstItem="DQg-2E-n8X" firstAttribute="leading" secondItem="fcc-Wi-mfH" secondAttribute="trailing" constant="10" id="vDa-rO-VvF"/>
+                    <constraint firstItem="mes-q5-AE6" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="oqj-xr-f9T" secondAttribute="trailing" constant="10" id="wez-Mw-3vl"/>
+                    <constraint firstItem="4sg-qw-Ncg" firstAttribute="top" secondItem="DQg-2E-n8X" secondAttribute="top" id="y1r-17-awN"/>
+                    <constraint firstItem="DQg-2E-n8X" firstAttribute="height" secondItem="fcc-Wi-mfH" secondAttribute="height" id="yb1-vb-kkf"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="descLabel" destination="mes-q5-AE6" id="Zkq-64-Q1z"/>
+                <outletCollection property="imgViews" destination="fcc-Wi-mfH" collectionClass="NSMutableArray" id="dJr-Oh-LRx"/>
+                <outletCollection property="imgViews" destination="DQg-2E-n8X" collectionClass="NSMutableArray" id="yjI-6f-JiE"/>
+                <outletCollection property="imgViews" destination="4sg-qw-Ncg" collectionClass="NSMutableArray" id="PE1-Xr-wjL"/>
+                <outletCollection property="imgViews" destination="oqj-xr-f9T" collectionClass="NSMutableArray" id="4iJ-LC-sdY"/>
+            </connections>
+            <point key="canvasLocation" x="-70.5" y="88.5"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="default" width="256" height="256"/>
+    </resources>
+</document>

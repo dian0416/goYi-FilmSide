@@ -1,0 +1,58 @@
+PODS:
+  - Alamofire (4.4.0)
+  - ESPullToRefresh (2.6)
+  - HandyJSON (1.6.1)
+  - IQKeyboardManagerSwift (4.0.10)
+  - Kingfisher (3.10.1)
+  - LLCycleScrollView (1.4.4):
+    - Kingfisher
+  - Moya (8.0.5):
+    - Moya/Core (= 8.0.5)
+  - Moya/Core (8.0.5):
+    - Alamofire (~> 4.1)
+    - Result (~> 3.0)
+  - Result (3.2.3)
+  - SnapKit (4.0.0)
+  - UMengAnalytics-NO-IDFA (4.2.5)
+  - UMengUShare/Core (6.4.4):
+    - UMengUShare/Network
+  - UMengUShare/Network (6.4.4)
+  - UMengUShare/Social/ReducedQQ (6.4.4):
+    - UMengUShare/Core
+  - UMengUShare/Social/ReducedSina (6.4.4):
+    - UMengUShare/Core
+  - UMengUShare/Social/ReducedWeChat (6.4.4):
+    - UMengUShare/Core
+  - UMengUShare/UI (6.4.4):
+    - UMengUShare/Core
+
+DEPENDENCIES:
+  - ESPullToRefresh
+  - HandyJSON (~> 1.6.1)
+  - IQKeyboardManagerSwift
+  - Kingfisher (~> 3.0)
+  - LLCycleScrollView (~> 1.4.4)
+  - Moya
+  - SnapKit (~> 4.0.0)
+  - UMengAnalytics-NO-IDFA
+  - UMengUShare/Social/ReducedQQ
+  - UMengUShare/Social/ReducedSina
+  - UMengUShare/Social/ReducedWeChat
+  - UMengUShare/UI
+
+SPEC CHECKSUMS:
+  Alamofire: dc44b1600b800eb63da6a19039a0083d62a6a62d
+  ESPullToRefresh: 85f4990acf87f78c6a1466bbbee7a75d7de24db9
+  HandyJSON: dcc98115467462a4749db81bc8a9052607600bdf
+  IQKeyboardManagerSwift: 75ba21a23794a1e6b6fe6d9a267ea17f80e06771
+  Kingfisher: 33a1b82140fcb14a9fc13f78dfde2a03ff8de8cb
+  LLCycleScrollView: 7dcfb96bae6947b5de446a868e80ff0db2f047ae
+  Moya: c37eec09a098ba9991b5a963b291fc5704bdb9ef
+  Result: 128640a6347e8d2ae48b142556739a2d13f90ce6
+  SnapKit: a42d492c16e80209130a3379f73596c3454b7694
+  UMengAnalytics-NO-IDFA: 16666e32edce5be44ae5b14aaaa7f3582e09d6ab
+  UMengUShare: cd54ae52958426b79aa9193a7b02058d6a6d9aa0
+
+PODFILE CHECKSUM: 176cd97b11856b571539a122acdcb939834a3e6f
+
+COCOAPODS: 1.4.0

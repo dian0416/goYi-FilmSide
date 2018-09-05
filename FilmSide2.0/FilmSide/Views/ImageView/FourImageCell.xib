@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11542" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="285" id="KGk-i7-Jjw" customClass="FourImageCell" customModule="Producer" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="322" height="285"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="322" height="284"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="default" translatesAutoresizingMaskIntoConstraints="NO" id="WjQ-Vd-9wT">
+                        <rect key="frame" x="10" y="10" width="302" height="151"/>
+                        <constraints>
+                            <constraint firstAttribute="width" secondItem="WjQ-Vd-9wT" secondAttribute="height" multiplier="2:1" id="vJu-Lb-HIk"/>
+                        </constraints>
+                    </imageView>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="default" translatesAutoresizingMaskIntoConstraints="NO" id="rdn-F2-pMA">
+                        <rect key="frame" x="10" y="166.5" width="97.5" height="97.5"/>
+                        <constraints>
+                            <constraint firstAttribute="width" secondItem="rdn-F2-pMA" secondAttribute="height" multiplier="1:1" id="Ahb-LX-VcQ"/>
+                        </constraints>
+                    </imageView>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="default" translatesAutoresizingMaskIntoConstraints="NO" id="kfw-b4-zxL">
+                        <rect key="frame" x="215" y="166.5" width="97" height="97.5"/>
+                    </imageView>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="default" translatesAutoresizingMaskIntoConstraints="NO" id="HFO-Sb-zmh">
+                        <rect key="frame" x="112" y="166.5" width="98" height="97.5"/>
+                    </imageView>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="kfw-b4-zxL" firstAttribute="leading" secondItem="HFO-Sb-zmh" secondAttribute="trailing" constant="5" id="46F-Jz-OJS"/>
+                    <constraint firstItem="HFO-Sb-zmh" firstAttribute="leading" secondItem="rdn-F2-pMA" secondAttribute="trailing" constant="5" id="4px-rs-Kfx"/>
+                    <constraint firstItem="WjQ-Vd-9wT" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="6QT-3n-81g"/>
+                    <constraint firstItem="HFO-Sb-zmh" firstAttribute="width" secondItem="rdn-F2-pMA" secondAttribute="width" id="9cb-Vg-cNz"/>
+                    <constraint firstItem="HFO-Sb-zmh" firstAttribute="height" secondItem="rdn-F2-pMA" secondAttribute="height" id="DHJ-I7-MGF"/>
+                    <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="rdn-F2-pMA" secondAttribute="bottom" constant="10" id="KwD-X1-5Gg"/>
+                    <constraint firstItem="WjQ-Vd-9wT" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="L63-d9-OL7"/>
+                    <constraint firstItem="kfw-b4-zxL" firstAttribute="top" secondItem="HFO-Sb-zmh" secondAttribute="top" id="XxE-Xb-RsL"/>
+                    <constraint firstItem="HFO-Sb-zmh" firstAttribute="top" secondItem="rdn-F2-pMA" secondAttribute="top" id="cLu-sM-a3f"/>
+                    <constraint firstItem="kfw-b4-zxL" firstAttribute="height" secondItem="rdn-F2-pMA" secondAttribute="height" id="cuD-eS-Vgs"/>
+                    <constraint firstItem="rdn-F2-pMA" firstAttribute="top" secondItem="WjQ-Vd-9wT" secondAttribute="bottom" constant="5" id="e6e-OL-LDM"/>
+                    <constraint firstItem="kfw-b4-zxL" firstAttribute="width" secondItem="rdn-F2-pMA" secondAttribute="width" id="haI-uD-ERt"/>
+                    <constraint firstAttribute="trailing" secondItem="WjQ-Vd-9wT" secondAttribute="trailing" constant="10" id="krg-2e-6p7"/>
+                    <constraint firstItem="kfw-b4-zxL" firstAttribute="trailing" secondItem="WjQ-Vd-9wT" secondAttribute="trailing" id="oXY-FI-vww"/>
+                    <constraint firstItem="rdn-F2-pMA" firstAttribute="leading" secondItem="WjQ-Vd-9wT" secondAttribute="leading" id="wMO-cw-YAF"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outletCollection property="imgViews" destination="WjQ-Vd-9wT" collectionClass="NSMutableArray" id="IEC-4l-HoL"/>
+                <outletCollection property="imgViews" destination="rdn-F2-pMA" collectionClass="NSMutableArray" id="oXu-kT-YD3"/>
+                <outletCollection property="imgViews" destination="HFO-Sb-zmh" collectionClass="NSMutableArray" id="F40-OH-wjT"/>
+                <outletCollection property="imgViews" destination="kfw-b4-zxL" collectionClass="NSMutableArray" id="5ZR-10-ASc"/>
+            </connections>
+            <point key="canvasLocation" x="71" y="57.5"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="default" width="1200" height="600"/>
+    </resources>
+</document>

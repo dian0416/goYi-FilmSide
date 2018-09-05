@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11542" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="247" id="KGk-i7-Jjw" customClass="InfoViewCell" customModule="Producer" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="449" height="247"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="449" height="246.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="撒大家思考思考时间到了深蓝色款福克斯的反馈卡萨丁空间发空间啊" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dWU-e5-vqd">
+                        <rect key="frame" x="10" y="10" width="429" height="190.5"/>
+                        <constraints>
+                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="60" id="MYf-bd-L95"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="1gD-3X-hme">
+                        <rect key="frame" x="0.0" y="205.5" width="449" height="1"/>
+                        <color key="backgroundColor" red="0.80000001190000003" green="0.80000001190000003" blue="0.80000001190000003" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="0.5" id="FeP-Ce-E7W"/>
+                        </constraints>
+                    </imageView>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1J5-5z-cxq">
+                        <rect key="frame" x="0.0" y="206.5" width="224.5" height="40"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="40" id="gSz-QQ-2IS"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <inset key="titleEdgeInsets" minX="5" minY="0.0" maxX="0.0" maxY="0.0"/>
+                        <state key="normal" title="转发到广场" image="redforward">
+                            <color key="titleColor" red="0.40000000600000002" green="0.40000000600000002" blue="0.40000000600000002" alpha="1" colorSpace="calibratedRGB"/>
+                        </state>
+                        <connections>
+                            <action selector="forwardClick:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="1f1-wp-QfY"/>
+                        </connections>
+                    </button>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iHn-Op-DKV">
+                        <rect key="frame" x="224.5" y="206.5" width="224.5" height="40"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <inset key="titleEdgeInsets" minX="5" minY="0.0" maxX="0.0" maxY="0.0"/>
+                        <state key="normal" title="删除" image="delete">
+                            <color key="titleColor" red="0.40000000600000002" green="0.40000000600000002" blue="0.40000000600000002" alpha="1" colorSpace="calibratedRGB"/>
+                        </state>
+                        <connections>
+                            <action selector="deleteClick:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="jm4-KW-WH3"/>
+                        </connections>
+                    </button>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="OAs-JJ-T4l">
+                        <rect key="frame" x="224.5" y="211.5" width="0.0" height="30"/>
+                        <color key="backgroundColor" red="0.80000001190000003" green="0.80000001190000003" blue="0.80000001190000003" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="0.5" id="QKd-rT-PS4"/>
+                        </constraints>
+                    </imageView>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="1gD-3X-hme" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="142-OY-jOw"/>
+                    <constraint firstItem="iHn-Op-DKV" firstAttribute="width" secondItem="1J5-5z-cxq" secondAttribute="width" id="6eb-du-Ysm"/>
+                    <constraint firstAttribute="trailing" secondItem="iHn-Op-DKV" secondAttribute="trailing" id="Eu9-ml-YAT"/>
+                    <constraint firstAttribute="bottom" secondItem="1J5-5z-cxq" secondAttribute="bottom" id="FPz-RZ-c8F"/>
+                    <constraint firstItem="dWU-e5-vqd" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="GT6-TU-tQo"/>
+                    <constraint firstItem="1J5-5z-cxq" firstAttribute="top" secondItem="iHn-Op-DKV" secondAttribute="top" id="KZF-9x-XBp"/>
+                    <constraint firstAttribute="bottom" secondItem="OAs-JJ-T4l" secondAttribute="bottom" constant="5" id="SCA-6y-Dpd"/>
+                    <constraint firstItem="OAs-JJ-T4l" firstAttribute="top" secondItem="1gD-3X-hme" secondAttribute="bottom" constant="5" id="Tm1-t2-ZSI"/>
+                    <constraint firstItem="dWU-e5-vqd" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="drA-il-Nvd"/>
+                    <constraint firstItem="iHn-Op-DKV" firstAttribute="height" secondItem="1J5-5z-cxq" secondAttribute="height" id="eC1-YE-Apj"/>
+                    <constraint firstItem="OAs-JJ-T4l" firstAttribute="leading" secondItem="1J5-5z-cxq" secondAttribute="trailing" id="gcV-t0-J1g"/>
+                    <constraint firstItem="iHn-Op-DKV" firstAttribute="leading" secondItem="OAs-JJ-T4l" secondAttribute="trailing" id="h1w-5g-ngh"/>
+                    <constraint firstItem="1J5-5z-cxq" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="jtr-uk-4bd"/>
+                    <constraint firstAttribute="trailing" secondItem="1gD-3X-hme" secondAttribute="trailing" id="rUi-nk-IYS"/>
+                    <constraint firstItem="1gD-3X-hme" firstAttribute="top" secondItem="dWU-e5-vqd" secondAttribute="bottom" constant="5" id="tBm-Tb-H18"/>
+                    <constraint firstAttribute="trailing" secondItem="dWU-e5-vqd" secondAttribute="trailing" constant="10" id="trB-6W-OJ7"/>
+                    <constraint firstItem="1J5-5z-cxq" firstAttribute="top" secondItem="1gD-3X-hme" secondAttribute="bottom" id="uKc-az-q9a"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="textLbl" destination="dWU-e5-vqd" id="Zbx-Mc-s4x"/>
+            </connections>
+            <point key="canvasLocation" x="-256.5" y="119.5"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="delete" width="12" height="13"/>
+        <image name="redforward" width="13" height="13"/>
+    </resources>
+</document>
